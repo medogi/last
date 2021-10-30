@@ -1,14 +1,10 @@
 package com.example.demo;
 
+import org.hibernate.Session;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.File;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Scanner;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -17,12 +13,15 @@ public class DemoApplication {
 
 
 		SpringApplication.run(DemoApplication.class, args);
+		meow();
 
 
 
 	}
 
 
-
+public static void meow(){
+	System.out.println("meow mewo");
+}
 
 }
